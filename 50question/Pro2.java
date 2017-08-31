@@ -3,7 +3,7 @@
  * 程序分析：用一个数去除2到sqrt，如果能被整除，则表明此数不是素数，反之是素数。
  */
 
-public class Pro1
+public class Pro2
 {
 	public static void main(String[] args)
 	{
