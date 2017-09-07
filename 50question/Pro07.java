@@ -12,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Pro7
+public class Pro07
 {
 	public static void main(String[] args)
 	{

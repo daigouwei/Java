@@ -4,7 +4,7 @@
  * 程序分析：利用for循环控制100-999个数，每个数分解出个位、十位、百位。
  */
 
-public class Pro3
+public class Pro03
 {
 	public static void main(String[] args)
 	{

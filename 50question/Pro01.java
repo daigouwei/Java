@@ -4,7 +4,7 @@
  * 程序分析：兔子规律为数列 1,1,2,3,5,8,13,21...
  */
 
-public class Pro1 {
+public class Pro01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Pro4
+public class Pro04
 {
 	public static void main(String[] args)
 	{
