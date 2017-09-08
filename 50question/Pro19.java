@@ -14,11 +14,17 @@
  * （1）没什么语法上的get，但是实现方式还是值得一做的
  */
 
+import java.util.Scanner;
+
 public class Pro19
 {
     public static void main(String[] args)
     {
-        printStar(7);
+        System.out.print("Please input a odd number: ");
+        Scanner scan = new Scanner(System.in);
+        int oddNum = scan.nextInt();
+
+        printStar(oddNum);
     }
 
     static void printStar(int lineVal)
