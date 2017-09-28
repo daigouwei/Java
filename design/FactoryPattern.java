@@ -4,6 +4,7 @@
  */
 
 /*
+//Simple Factory Pattern
 public class FactoryPattern
 {
     public static void main(String[] args)
@@ -16,7 +17,6 @@ public class FactoryPattern
 }
 
 
-//Simple Factory Pattern
 class PizzaStore
 {
     Pizza pizza;
@@ -75,7 +75,7 @@ class ClamPizza extends Pizza
 */
 
 
-
+/*
 //Factory Method Pattern
 public class FactoryPattern
 {
@@ -171,6 +171,17 @@ class ChicagoStyleClamPizza extends Pizza
     void declare(){sop("This is ChicagoStyleClamPizza");}
     void prepare(){sop("prepare ChicagoStyleClamPizza");}
 }
+*/
+
+
+public class FactoryPattern
+{
+    public static void main(String[] args)
+    {
+
+    }
+}
+
 
 
 
