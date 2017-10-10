@@ -14,9 +14,7 @@ public class LinkListTest
         ll.insert(ll.getHead(), 5);
         ll.insert(ll.getHead(), 6);
         ll.printLinkNode(ll.getHead());
-        ll.delete(ll.getHead(), 2);
-        ll.delete(ll.getHead(), 1);
-        ll.delete(ll.getHead(), 3);
+        ll.reverse(ll.getHead());
         ll.printLinkNode(ll.getHead());
     }
 }
@@ -92,6 +90,19 @@ class LinkList<T>
         {
             System.out.println("no this data.");
         }
+    }
+
+    public void reverse(Node<T> node)
+    {
+        Node<T> curr = node, prev = null, tmp = null;
+        while(curr != null)
+        {
+            tmp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = tmp;
+        }
+        head = prev;
     }
 
     public void printLinkNode(Node<T> node)
