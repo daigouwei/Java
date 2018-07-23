@@ -33,6 +33,19 @@ public class Solution206 {
         return pre;
     }
 
+    public ListNode reverseList2(ListNode head) {
+        if (null == head || null == head.next)
+            return head;
+        else {
+            //假设自身反转方法是正确的，则可以先反转除了第一个剩下的所有节点
+            ListNode node = reverseList2(head.next);
+            //反转完成之后再处理第一个节点
+            head.next.next = head;
+            head.next = null;
+            return node;
+        }
+    }
+
     class ListNode {
         int val;
         ListNode next;
