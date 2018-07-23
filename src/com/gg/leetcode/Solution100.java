@@ -18,6 +18,20 @@ public class Solution100 {
         return isSame(p.left, q.left) && isSame(p.right, q.right);
     }
 
+    private boolean isSame2(TreeNode p, TreeNode q) {
+        if (null == p && null == q)
+            return true;
+        else if (null == p || null == q)
+            return false;
+        else if (p.val != q.val)
+            return false;
+        else {
+            boolean isSameLeft = isSame2(p.left, q.left);
+            boolean isSameRight = isSame2(p.right, q.right);
+            return isSameLeft && isSameRight;
+        }
+    }
+
     class TreeNode {
         int val;
         TreeNode left;

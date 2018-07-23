@@ -62,9 +62,11 @@ public class Solution94 {
     private void inorder(TreeNode root) {
         if (null == root)
             return;
-        System.out.println(root.val);
-        inorder(root.left);
-        inorder(root.right);
+        else {
+            inorder(root.left);
+            System.out.println(root.val);
+            inorder(root.right);
+        }
     }
 
     class TreeNode {
