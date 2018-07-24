@@ -9,7 +9,11 @@ public class Solution111 {
             return 0;
         int left = minDepth(root.left);
         int right = minDepth(root.right);
-        return 1 + Math.min(left, right);
+        if (left != 0 && right != 0)
+            return 1 + Math.min(left, right);
+        else
+            return left == 0 ? 1 + right : 1 + left;
+
     }
 
     class TreeNode {
