@@ -1,3 +1,5 @@
+package com.gg.leetcode;
+
 /**
  * Created by guowei on 2018/8/29.
  */
