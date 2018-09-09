@@ -6,7 +6,7 @@ package com.gg.leetcode;
 public class Solution38 {
     public static void main(String[] args) {
         Solution38 solution38 = new Solution38();
-        String res = solution38.countAndSay(3);
+        String res = solution38.countAndSay(4);
         System.out.println(res);
     }
 
@@ -16,19 +16,21 @@ public class Solution38 {
         }
         String str = countAndSay(n - 1);
         int len = str.length();
-        int cnt = 1;
-        char pre = str.charAt(0);
-        for (int i = 1; i < len; i++) {
+        int cnt = 0;
+        String res = "";
+        for (int i = 0; i < len; i++) {
+            cnt++;
             char cur = str.charAt(i);
-            if (cur == pre) {
-                cnt++;
+            if (i == len - 1) {
+                res = (res + cnt) + cur;
+                break;
             }
-            else {
-                str += cnt + pre;
-                cnt = 1;
+            char next = str.charAt(i + 1);
+            if (cur != next) {
+                res = (res + cnt) + cur;
+                cnt = 0;
             }
-            pre = cur;
         }
-        return str;
+        return res;
     }
 }
